@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css滚动方案</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+        .swipe{
+            color:black;
+        }
+        .chart{
+            display:flex;
+        }
+        .date{
+            width:100px;
+        }
+        .date div{
+            width:100px;
+            text-align:center;
+        }
+        .scroll{
+            flex:1;
+            overflow:hidden;
+            overflow-x:auto;
+            display:flex;
+            border-left:1px solid #333;
+        }
+        .scroll li {
+          list-style:none;
+            border-right:1px solid #454545;
+        }
+        .scroll li div:first-child{
+            border-bottom:1px solid #333;
+            border-top:1px solid #333;
+        }
+        .scroll li div{
+            padding:0 5px;
+            text-align:center;
+            width:65px;
+        }
+    </style>
+</head>
+<body>
+    <div class="swipe">css方案的左右滑动</div>
+    <div class="chart">
+    <div class="date">
+        <div>日期</div>
+        <div>2018-02-01</div>
+        <div>2018-02-02</div>
+        <div>2018-02-03</div>
+        <div>2018-02-04</div>
+        <div>2018-02-05</div>
+        <div>2018-02-06</div>
+        <div>2018-02-07</div>
+        <div>2018-02-08</div>
+        <div>2018-02-09</div>
+        <div>2018-02-10</div>
+        <div>2018-02-11</div>
+        <div>2018-02-12</div>
+        <div>2018-02-13</div>
+        <div>2018-02-14</div>
+        <div>2018-02-15</div>
+        <div>2018-02-16</div>
+        <div>2018-02-17</div>
+        <div>2018-02-18</div>
+        <div>2018-02-19</div>
+        <div>2018-02-20</div>
+    </div>
+    <ul class="scroll">
+        <li>
+            <div>销售额</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+        </li>
+        <li>
+            <div>销售额</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+        </li>
+        <li>
+            <div>销售额</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+        </li>
+        <li>
+            <div>销售额</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+        </li>
+        <li>
+            <div>销售额</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+        </li>
+        <li>
+            <div>销售额</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+            <div>300</div>
+        </li>
+    </ul>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>
